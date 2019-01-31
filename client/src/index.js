@@ -10,8 +10,8 @@ import './index.css';
 
 const routing = (
     <Router>
-       <div className="menu">
-      <ul>
+       <div>
+      <ul className="menu">
         <li>
           <Link to="/">Home</Link>
         </li>
