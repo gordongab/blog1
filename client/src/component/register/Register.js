@@ -15,11 +15,11 @@ class Register extends React.Component {
 
   handleRegister= (event) => {
     event.preventDefault();
-  
       $.post('/api/register', { username: this.state.username, password: this.state.password, passwordConf: this.state.password2 })
-              
-                 }
-
+      .then((result) => {
+        window.location.href = '/user';       
+      })
+    }
 
 
 
@@ -69,7 +69,7 @@ class Register extends React.Component {
                <div className="form-group">
                 <button type="submit"
                   className="btn btn-primary"
-                  // onClick={this.handleRegister}
+                  onClick={this.handleRegister}
                   >submit</button>
 
               </div>
