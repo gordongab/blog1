@@ -22,6 +22,13 @@ class Register extends React.Component {
     }
 
 
+    handleChange = (event) => {
+      event.preventDefault();
+      this.setState({
+        [event.target.name]: event.target.value
+      }, function () { console.log(this.state) })
+    }
+
 
   
   render() { 
@@ -39,6 +46,7 @@ class Register extends React.Component {
                placeholder="Enter Username"
                type="text"
                value={this.state.username}
+               
                />
                </div>
                
@@ -47,6 +55,7 @@ class Register extends React.Component {
                className="email-input" 
                placeholder="Enter Email Address"
                type="text"
+               
                
                />
                </div>
