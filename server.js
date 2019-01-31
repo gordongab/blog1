@@ -17,6 +17,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://gordongab:reactblog1@ds01
 
 // Add routes, both API and view
 require('./routes/api-routes')(app);
+require('./routes/user-routes')(app);
 
 
 
