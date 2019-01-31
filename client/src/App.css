@@ -1,0 +1,73 @@
+
+
+.insertPost {
+    padding: 100px;
+}
+
+
+.blog-list {
+margin-top: 60px;
+
+}
+.insertedTitles {
+    margin-top: 30px;
+    font-family: 'Staatliches', cursive;
+    padding-left: 500px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.displayPic {
+    background-image: url("assets/gabe.jpg");
+    height: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    margin-left: 500px;
+
+}
+
+.insertedAuthors {
+    color: gray;
+    margin-left: 55px;
+    margin-top: 30px;
+    font-size: 12px;
+    font-style: italic;
+    
+    
+}
+
+hr {
+    color: black;
+    margin-left: 350px;
+    margin-right: 400px;
+}
+
+.insertedBlogs {
+    margin-top: 20px;
+    padding-left:380px;
+    padding-right: 400px;
+    padding-bottom: 50px;
+    font-family: 'Bad Script', cursive;
+    font-size: 15px;
+    }
+
+.separator {
+    padding-left: 500px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    size: 100%;
+}
+
+Modal {
+    margin-left: 500px;
+}
+
+.delete-button {
+    height: 20px;
+    width: 50px;
+    size: 1px;
+    font-size: 8.5px;
+    border-radius: 10px;
+    margin-left: 850px;
+    font-weight: bold;
+}

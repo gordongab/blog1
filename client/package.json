@@ -1,0 +1,37 @@
+{
+  "name": "bootblog",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.2.1",
+    "express": "^4.16.4",
+    "install": "^0.12.2",
+    "mdbreact": "^4.9.0",
+    "mongoose": "^5.4.4",
+    "react": "^16.7.0",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-dom": "^16.7.0",
+    "react-materialize": "^2.6.0",
+    "react-native": "^0.58.3",
+    "react-responsive-modal": "^3.5.1",
+    "react-scripts": "^2.1.3",
+    "react-timestamp": "^4.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

@@ -1,0 +1,24 @@
+.header {
+    height: 120px;
+    background-color: #282C34;
+    margin-bottom: 100px;
+    
+}
+
+.logo {
+    font-family: 'Dokdo', cursive;
+    color: white;
+    font-size: 105px;
+    margin-left: 10px;
+    margin-top: -30px;
+    
+}
+
+
+.title {
+    font-family: 'Nothing You Could Do', cursive;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 5px;
+}
