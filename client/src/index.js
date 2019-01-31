@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 import App from './App';
-import Users from '../src/component/user/User';
+import Users from '../src/component/user/Users';
 import Register from '../src/component/register/Register';
 import NotFound from '../src/component/notfound/NotFound';
 import './index.css';
