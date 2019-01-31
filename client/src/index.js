@@ -5,11 +5,12 @@ import App from './App';
 import Users from '../src/component/user/User';
 import Register from '../src/component/register/Register';
 import NotFound from '../src/component/notfound/NotFound';
+import './index.css';
 
 
 const routing = (
     <Router>
-       <div>
+       <div className="menu">
       <ul>
         <li>
           <Link to="/">Home</Link>
