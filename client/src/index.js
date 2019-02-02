@@ -27,7 +27,7 @@ const routing = (
       </ul>
       <Switch>
         <Route exact path="/" component={Welcome} />
-        <Route exact path="/welcome" component={App} />
+        <Route path="/welcome" component={App} />
         
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
