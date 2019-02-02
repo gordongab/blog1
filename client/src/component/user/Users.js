@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Users.css';
 
 
 class Users extends React.Component {

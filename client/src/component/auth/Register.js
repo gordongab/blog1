@@ -6,29 +6,31 @@ import * as $ from 'axios';
 
 
 class Register extends React.Component {
-
+   
   state = {
     username: '',
     password: '',
     passwordConf: ''
   }
 
-  handleRegister= (event) => {
-    event.preventDefault();
-      $.post('/api/register', { username: this.state.username, password: this.state.password, passwordConf: this.state.password2 })
-      .then((result) => {
-        window.location.href = '/user';       
-      })
-    }
-
-
-    handleChange = (event) => {
+  handleChange = (event) => {
       event.preventDefault();
       this.setState({
         [event.target.name]: event.target.value
       }, function () { console.log(this.state) })
     }
 
+  
+  handleRegister= (event) => {
+    console.log("here in handleRegister");
+    event.preventDefault();   
+      $.post('/api/register', {username: this.state.username, password: this.state.password, passwordConf: this.state.password2 })
+      .then((result) => {
+        window.location.href = '/';
+      })
+    }
+
+     
 
   
   render() { 
@@ -39,42 +41,43 @@ class Register extends React.Component {
       
       <h1>dev Signup! </h1>
         <div className="register-form">
-        <form >
+
+        <form onSubmit={this.state.handleRegister}>
             <div className="form-group">
             <input 
                className="username-input" 
                placeholder="Enter Username"
                type="text"
                value={this.state.username}
-               
-               />
+               onChange={this.handleChange}
+               name="username"
+
+                />
                </div>
+                              
                
-               <div className="form-group">
-            <input 
-               className="email-input" 
-               placeholder="Enter Email Address"
-               type="text"
-               
-               
-               />
-               </div>
                <div className="form-group">
             <input 
                className="password-input" 
                placeholder="Enter Password"
                type="password"
                value={this.state.password}
-               />
+               onChange={this.handleChange}
+               name="password"
+                />
                </div>
+
                <div className="form-group">
             <input 
                className="password2-input" 
                placeholder="Confirm Password"
                type="password"
                value={this.state.password2}
-               />
+               onChange={this.handleChange}
+               name="password2"
+                />
                </div>
+
                <div className="form-group">
                 <button type="submit"
                   className="btn btn-primary"
@@ -85,10 +88,8 @@ class Register extends React.Component {
         </form>
     
       </div>
-
+  </div>
     
-    </div>
-
       
     );
   }

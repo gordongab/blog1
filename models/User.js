@@ -5,14 +5,15 @@ const UserSchema = new Schema({
 	username: {
 		type: String,
 		unique: true,
-		required: true,
+		required: 'You must enter a username'
 	},
 	password: {
 		type: String,
-		required: true,
+		required: 'You must enter a password'
 	},
 	passwordConf: {
 		type: String,
+		required: 'Passwords need to match'
 	}
 });
 

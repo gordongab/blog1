@@ -9,23 +9,6 @@ return (
                    </div>)
         }
         
-/* <Navbar bg="info" variant="text-danger">
-    <Navbar.Brand href="#home">
-      <img
-        alt=""
-        src="/logo.svg"
-        width="30"
-        height="30"
-        className="d-inline-block align-top"
-      />
-      {' Bootcamp Experiences'}
-    </Navbar.Brand>
-  </Navbar> */
-
-
-
-
-// 
 
 
 export default Header;

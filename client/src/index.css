@@ -1,4 +1,8 @@
 .menu {
     margin-left: 700px;
-    margin-top: 25px;
+    margin-top: 5px;
+}
+
+.size1, .size2, .size3, .size4 {
+    font-size: 10px;
 }
