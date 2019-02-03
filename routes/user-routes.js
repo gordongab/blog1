@@ -25,7 +25,7 @@ module.exports = function (app) {
 		console.log("userData", userData);
 
 		//using schema.create to insert data into the db
-		db.User.create(userData, function (err, user) {
+		db.create(userData, function (err, user) {
 			if (err) {
 				return res.json(err)
 			} else {

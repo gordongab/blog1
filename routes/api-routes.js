@@ -25,7 +25,7 @@ module.exports = function (app) {
   });
 
    app.delete('/api/posts/:id', function (req, res) {
-    Note.findOneAndDelete(req.params.id)
+    Post.findOneAndDelete(req.params.id)
       .then(data => res.json({ success: true }))
       .catch(err => res.json(err))
   })

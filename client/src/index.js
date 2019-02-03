@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 import App from './App';
+
 import Register from '../src/component/auth/Register';
 import Welcome from '../src/component/welcome/Welcome';
 import Login from '../src/component/auth/Login';
@@ -16,7 +17,7 @@ const routing = (
        <li>
           <Link to="/">Home</Link></li>
         <li>
-          <Link to="/welcome">Dashboard</Link>
+          <Link to="/welcome">Welcome</Link>
         </li>
         <li>
           <Link to="/register">Register</Link>
@@ -27,7 +28,7 @@ const routing = (
       </ul>
       <Switch>
         <Route exact path="/" component={Welcome} />
-        <Route path="/welcome" component={App} />
+        <Route exact path="/welcome" component={App} />
         
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
