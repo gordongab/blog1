@@ -20,9 +20,9 @@ const routing = (
       <Switch>
         <Route path="/" component={Welcome} />
         <Route path="/home" component={BlogDelete} />
-        
+        <Route path="/login" component={Login} />
         <Route exact path="/logout" component={NewApp} />
-
+        <Route path="/register" component={Register} />
         <Route  path="/admin" component={App} />
         <Route component={NotFound} />
         </Switch>
