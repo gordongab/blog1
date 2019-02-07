@@ -71,15 +71,16 @@ class Blogs extends React.Component {
               this.state.blogList ?
                 this.state.blogList.map(ele => {
                   return (<div>
-                    <div className="insertedTitles"> {ele.title}</div>
-                    <div className="displayPic"> <span className="insertedAuthors">by {ele.author} on </span></div>
+                    <div className="insertedTitles">{ele.title} </div>
+                    <div className="displayPic"> <span className="insertedAuthors">by {ele.author}} </span></div>
                     <div className="insertedBlogs"> {ele.content} </div>
-                    <div className="delete">
+                   <div className="delete">
                     <button className="delete-button"
                             type="submit"
                             
                             onClick={this.handleDelete}>delete 
-                    </button></div>
+                    </button> 
+                    </div> 
                     <hr></hr>
                   </div>)
                 })

@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import './Login.css';
 import { Button } from 'react-materialize';
 import * as $ from 'axios';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,7 +13,8 @@ class Login extends React.Component {
 
  state = {
     username: '',
-    password: ''
+    password: '',
+    loggedIn: false
   }
 
    handleChange = (event) => {
@@ -30,16 +32,22 @@ class Login extends React.Component {
         password: this.state.password
                  }
 
-    $.post('/api/login', user, function(response){
-        console.log(response);
-        if (response.success === true) {
-            console.log("login success");
-            alert('success!');
-            // window.location.href = '/';
-        } else {
-            alert('Invalid credentials. Please register.')
+    $.post('/api/login').then((response)=>{
+      console.log(response)
+      if(response.data.success == true){
+        alert("Login Successful")
+        localStorage.setItem("username", this.state.username)
+        localStorage.setItem("loggedIn", true)
 
-        }
+        const result =  localStorage.getItem('username');
+        console.log(result, "local storage")
+        this.setState({
+          loggedIn: true
+        })
+        window.location.href = '/admin'
+      }else {
+        alert("Invalid User name or Password")
+      }
     })
 
 }
@@ -47,7 +55,21 @@ class Login extends React.Component {
  render() { 
     return (
       <div className="login">
-      <Header />
+      <style jsx>{`
+          .logoutlink {
+            display: none;
+          }
+
+          .login-link {
+            display: none;
+          }
+
+            `
+          
+          }
+        </style>
+
+      <Header loggedIn={this.state.loggedIn} username={this.state.username} />
       
       
       <h1>dev Login! </h1>

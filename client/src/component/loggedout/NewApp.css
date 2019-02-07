@@ -1,4 +1,4 @@
-.header {
+.newheader {
     height: 120px;
     background-color: #282C34;
     
@@ -15,6 +15,16 @@
     
 }
 
+h1 {
+    color: black;
+    margin-left: 350px;
+}
+
+h2 {
+    color: black;
+    margin-left: 500px;
+}
+
 
 .title {
     font-family: 'Nothing You Could Do', cursive;
@@ -26,8 +36,7 @@
 .username {
     font-family: 'Nothing You Could Do';
     font-size: 15px;
-    margin-left: 650px;
-    color: white;
+    margin-left: 700px;
 }
 
 
@@ -40,3 +49,19 @@
               
         
     }
+    
+
+.welcome-link {
+    
+
+}
+
+
+.register-link{
+    
+}
+
+.login-link {
+
+
+}

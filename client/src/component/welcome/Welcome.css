@@ -1,30 +1,30 @@
-/* html {      
-    background-color: #282B34;
-    } 
-
 .welcome-page {      
     background-color: #282B34;
-    
+    height: 100vh;
+    display: flex;
+    align-items: center;
     
     } 
 
-     */
+     
 .animated {
-    /* background-image: url('./welcome-logo.gif');
-    background-repeat: no-repeat; */
-    height: 190px;
-    margin-left: 550px;
-    margin-top: 200px;
+   position: relative;
+   margin-left: 550px;
+   height: 200px;
+   
     
+   }
 
-}
-h1 {
+
+.welcome-text {
     font-family: 'Nothing You Could Do', cursive;
-    color:  black;
+    color:  white;
     font-size: 35px;
-    margin-left: 450px;
-    margin-top: 10px;
-
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 430px;
+    
+    
 }
 
 

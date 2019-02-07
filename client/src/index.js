@@ -8,30 +8,22 @@ import Welcome from '../src/component/welcome/Welcome';
 import Login from '../src/component/auth/Login';
 import NotFound from '../src/component/notfound/NotFound';
 import './index.css';
+import NewApp from '../src/component/loggedout/NewApp';
+import BlogDelete from '../src/component/admin/AdminDelete';
 
+localStorage.setItem('loggedIn', false)
 
 const routing = (
     <Router>
        <div>
-      <ul className="menu">
-       <li>
-          <Link to="/">Home</Link></li>
-        <li>
-          <Link to="/welcome">Welcome</Link>
-        </li>
-        <li>
-          <Link to="/register">Register</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-      </ul>
+      
       <Switch>
         <Route exact path="/" component={Welcome} />
-        <Route exact path="/welcome" component={App} />
+        <Route exact path="/home" component={BlogDelete} />
         
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/register" component={Register} />
+        <Route exact path="/logout" component={NewApp} />
+
+        <Route exact path="/admin" component={App} />
         <Route component={NotFound} />
         </Switch>
       </div>

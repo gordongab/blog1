@@ -5,7 +5,7 @@ module.exports = function (app) {
 
 	//// GET ROUTE /////
 	app.get('/api/users', function (req, res) {
-		db.User.findAll({}).then(function (dbUsers) {
+		db.findAll({}).then(function (dbUsers) {
 			res.json(dbUsers);
 		});
 	});
@@ -44,10 +44,14 @@ module.exports = function (app) {
 			password: req.body.password
 		}
 
-		db.User.findOne({ username: User.username, password: User.password }).then(function (user) {
+		console.log(User, " this is the user")
+
+		db.find({ username: User.username, password: User.password }).then(function (user) {
+			console.log(user, "user from db")
 			if (!user) {
 				res.send({ success: false });
 			} else {
+				console.log("there is a user")
 				res.send({ success: true });
 			}
 

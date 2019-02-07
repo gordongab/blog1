@@ -4,3 +4,13 @@
 margin-top: 60px;
 
 }
+
+.delete-button {
+    height: 20px;
+    width: 50px;
+    size: 1px;
+    font-size: 8.5px;
+    border-radius: 10px;
+    margin-left: 850px;
+    font-weight: bold;
+}

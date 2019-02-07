@@ -1,6 +1,6 @@
 .launch-button {
     margin-left: 850px;
-    margin-top: -150px;
+    
 }
 
 .launchbutton {
@@ -11,5 +11,7 @@
     font-family: 'Gruppo', cursive;
     font-size: 15px;
     font-weight: bold;
+    margin-top: 30px;
+   
 }
 
