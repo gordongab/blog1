@@ -21,8 +21,6 @@ class App extends React.Component {
         </style>
         <Header />
 
-         {/* <Routing /> */}
-        
         <Blogs />
 
       </div>

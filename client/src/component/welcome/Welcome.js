@@ -10,7 +10,7 @@ render() {
     return (
         <div className="welcome-page">
         
-       <div className="animated"><Link to ="/home"><img src={logo} /></Link></div>
+       <div className="animated"><Link to="/home"><img src={logo} /></Link></div>
        <div className="welcome-text">welcome. click to <s>vent</s> enter</div>
        
         
