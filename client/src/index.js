@@ -18,12 +18,12 @@ const routing = (
        <div>
       
       <Switch>
-        <Route exact path="/" component={Welcome} />
-        <Route path="/home" component={BlogDelete} />
+        <Route path="/" component={Welcome} />
+        <Route path="/welcome" component={BlogDelete} />
         
         <Route exact path="/logout" component={NewApp} />
 
-        <Route exact path="/admin" component={App} />
+        <Route  path="/admin" component={App} />
         <Route component={NotFound} />
         </Switch>
       </div>
