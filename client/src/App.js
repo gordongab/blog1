@@ -7,6 +7,20 @@ import './App.css';
 
 class App extends React.Component {
 
+  // state = {username: null}
+    
+  // componentDidMount() {
+  //   const username = localStorage.getItem("username")
+  //   this.setState({username})
+    
+
+  // }
+
+  clearUser = () => {
+    return localStorage.removeItem("username")
+
+  }
+
   render() {
     return (
       <div className="App">
@@ -19,7 +33,7 @@ class App extends React.Component {
           
           }
         </style>
-        <Header />
+        <Header  clearUser = {this.clearUser} />
 
         <Blogs />
 

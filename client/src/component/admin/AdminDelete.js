@@ -6,9 +6,24 @@ import './admin.css';
 // import { Link } from 'react-router-dom';
 
 class BlogDelete extends React.Component { 
+    // state = {username: null}
+
+    // componentDidMount() {
+    //   const username = localStorage.getItem("username")
+    //   this.setState({username})
+      
+
+    // }
+
+  clearUser = () => {
+    return localStorage.removeItem("username")
+
+  }
+
     render() {
       return (
           <div className="admin">
+          
            <style jsx>{`
           .delete-button {
             display: none;
@@ -21,7 +36,9 @@ class BlogDelete extends React.Component {
           }
         </style>
 
-        <Header />
+        <Header clearUser = {this.clearUser}
+        
+        />
         
         <Blogs />
 

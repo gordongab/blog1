@@ -11,7 +11,7 @@ return (
    <div className="header">
             <div className="logo">{"<>"} <span className="title">webDevs Anonymous </span>
             <span className="username">{"logged in as : " + localStorage.getItem("username") }</span>
-             {/* <div className="name"></div> */}
+          
              </div>
 
 
@@ -25,9 +25,9 @@ return (
         <li className="login-link">
           <Link to="/login">Login</Link>
         </li>
-        <li className="logoutlink">
-          <Link to="/logout"
-          onClick= {localStorage.clear()}>Logout</Link>
+        <li className="logoutlink"
+          onClick ={props.clearUser}>
+          <Link to="/logout">Logout</Link>
         </li>
         
       </ul>

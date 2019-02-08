@@ -3,9 +3,7 @@ import Header from '../header/Header';
 import './Login.css';
 import { Button } from 'react-materialize';
 import * as $ from 'axios';
-import { Link } from 'react-router-dom';
-
-
+import { Redirect } from 'react-router'
 
 
 
@@ -24,6 +22,15 @@ class Login extends React.Component {
       }, function () { console.log(this.state) })
     }
 
+    handleRedirect = () => {
+     console.log('calling this redirect');
+      if (this.state.loggedIn) {
+        console.log('loggedIN is true');
+        return <Redirect to='/admin' />
+        
+      }
+    }
+
         
   handleLogin= (event) => {
    event.preventDefault();
@@ -35,16 +42,15 @@ class Login extends React.Component {
     $.post('/api/login').then((response)=>{
       console.log(response)
       if(response.data.success == true){
-        alert("Login Successful")
-        localStorage.setItem("username", this.state.username)
-        localStorage.setItem("loggedIn", true)
-
+        // alert("Login Successful")
+                debugger
         const result =  localStorage.getItem('username');
         console.log(result, "local storage")
         this.setState({
           loggedIn: true
         })
-        window.location.href = '/admin'
+        localStorage.setItem("username", user.username)
+        localStorage.setItem("loggedIn", true)
       }else {
         alert("Invalid User name or Password")
       }
@@ -55,6 +61,7 @@ class Login extends React.Component {
  render() { 
     return (
       <div className="login">
+      {this.handleRedirect() }
       <style jsx>{`
           .logoutlink {
             display: none;

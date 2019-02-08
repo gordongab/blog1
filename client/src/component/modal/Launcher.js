@@ -21,6 +21,13 @@ class LaunchModal extends React.Component {
     ;
   }
 
+  handleSubmit = (e) => {
+    e.preventDefault();
+    this.toggleModal();
+    this.props.handleSubmit();
+
+  }
+
   render() {
  
     return (

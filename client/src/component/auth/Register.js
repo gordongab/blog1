@@ -26,7 +26,7 @@ class Register extends React.Component {
     event.preventDefault();   
       $.post('/api/register', {username: this.state.username, password: this.state.password, passwordConf: this.state.password2 })
       .then((result) => {
-        window.location.href = '/welcome';
+        // window.location.href = '/welcome';
       })
     }
 
