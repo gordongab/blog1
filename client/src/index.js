@@ -13,21 +13,21 @@ import BlogDelete from '../src/component/admin/AdminDelete';
 
 localStorage.setItem('loggedIn', false)
 
-const routing = (
+const Routing = () => (
     <Router>
        <div>
       
       <Switch>
-        <Route path="/" component={Welcome} />
-        <Route path="/home" component={BlogDelete} />
-        <Route path="/login" component={Login} />
+        <Route exact path="/" component={Welcome} />
+        <Route exact path="/home" component={BlogDelete} />
+        <Route exact path="/login" component={Login} />
         <Route exact path="/logout" component={NewApp} />
-        <Route path="/register" component={Register} />
-        <Route  path="/admin" component={App} />
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/admin" component={App} />
         <Route component={NotFound} />
         </Switch>
       </div>
     </Router>
   )
 
-ReactDOM.render(routing, document.getElementById('root'));
+ReactDOM.render(<Routing />, document.getElementById('root'));
