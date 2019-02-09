@@ -10,14 +10,17 @@ app.use(express.json());
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
+  app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  });
 }
 
-// Express serve up index.html file if it doesn't recognize route
-// onst path = require('path');
-// app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
-// });
-// }c
+else {
+  app.use(express.static(path.join(__dirname, '/client/public')));
+  app.get("/*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"));
+  });
+}
 
 
 // Connect to the Mongo DB
