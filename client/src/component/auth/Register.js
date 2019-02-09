@@ -31,7 +31,10 @@ class Register extends React.Component {
       })
     }
 
-     
+    clearUser = () => {
+      return localStorage.removeItem("username")
+  
+    }
 
   
   render() { 
