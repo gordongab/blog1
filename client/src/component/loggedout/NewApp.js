@@ -10,6 +10,15 @@ class NewApp extends React.Component {
   render() {
     return (
       <div className="newheader">
+       <style jsx>{`
+          .register-link {
+            display: none;
+          }
+
+            `
+          
+          }
+        </style>
             <div className="logo">{"<>"} <span className="title">webDevs Anonymous </span>
            
              </div>

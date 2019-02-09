@@ -100,7 +100,7 @@ class Register extends React.Component {
         </form> */}
     
       </div>
-  </div>
+ 
     
       
     );
