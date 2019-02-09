@@ -26,7 +26,7 @@ class Login extends React.Component {
      console.log('calling this redirect');
       if (this.state.loggedIn) {
         console.log('loggedIN is true');
-        return <Redirect to='/profile' />
+        return <Redirect to='/admin' />
        
       }
     }
