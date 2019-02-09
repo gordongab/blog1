@@ -34,7 +34,8 @@ class App extends React.Component {
           
           }
         </style>
-        <Header  clearUser = {this.clearUser} />
+        <Header 
+         clearUser = {this.clearUser} />
 
         <Blogs />
 
