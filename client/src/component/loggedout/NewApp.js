@@ -1,7 +1,7 @@
 import React from 'react';
 import Blogs from '../../component/modal/Blog';
 import './NewApp.css';
-import { Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,7 +14,7 @@ class NewApp extends React.Component {
            
              </div>
 
-      <Router>
+      
         <ul className="menu">
        <li className="welcome-link">
           <Link to="/home">Home</Link>
@@ -26,7 +26,7 @@ class NewApp extends React.Component {
         </li>
         
       </ul>
-      </Router>   
+            
       <h1> Admin {localStorage.getItem("username")} successfully logged out.</h1>
                    </div>
         

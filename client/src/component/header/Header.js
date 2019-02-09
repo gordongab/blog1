@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../auth/Login';
 
 
@@ -14,7 +14,7 @@ return (
           
              </div>
 
-    <Router>
+    
         <ul className="menu">
        <li className="welcome-link">
           <Link to="/home">Home</Link>
@@ -31,7 +31,6 @@ return (
         </li>
         
       </ul>
-      </Router>
             
                    </div>)
         }
