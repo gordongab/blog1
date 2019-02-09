@@ -14,7 +14,7 @@ class NewApp extends React.Component {
            
              </div>
 
-
+      <Router>
         <ul className="menu">
        <li className="welcome-link">
           <Link to="/home">Home</Link>
@@ -26,7 +26,7 @@ class NewApp extends React.Component {
         </li>
         
       </ul>
-            
+      </Router>   
       <h1> Admin {localStorage.getItem("username")} successfully logged out.</h1>
                    </div>
         

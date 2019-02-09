@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import App from './App';
 
 import Register from '../src/component/auth/Register';
@@ -15,7 +15,7 @@ import { HashRouter } from 'react-router-dom';
 localStorage.setItem('loggedIn', false)
 
 const Routing = () => (
-   <HashRouter>
+   
       <Router>
        <div>
       
@@ -30,7 +30,7 @@ const Routing = () => (
         </Switch>
       </div>
     </Router>
-    </HashRouter>
+   
   )
 
 ReactDOM.render(<Routing />, document.getElementById('root'));
