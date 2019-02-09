@@ -24,16 +24,12 @@ class LaunchModal extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.toggleModal();
-    this.addDate();
+    
     this.props.handleSubmit();
 
   }
 
-  addDate = () => { 
-    const currentTime = new Date();
-    return window.localStorage.setItem("date", +new Date)
   
-    }
 
   render() {
  
