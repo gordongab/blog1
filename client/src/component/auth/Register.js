@@ -3,7 +3,7 @@ import Header from '../header/Header';
 import './Register.css';
 import { Button } from 'react-materialize';
 import * as $ from 'axios';
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 
 class Register extends React.Component {
