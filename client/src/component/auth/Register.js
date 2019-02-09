@@ -3,6 +3,7 @@ import Header from '../header/Header';
 import './Register.css';
 import { Button } from 'react-materialize';
 import * as $ from 'axios';
+import { Link } from "react-router";
 
 
 class Register extends React.Component {
@@ -45,7 +46,7 @@ class Register extends React.Component {
                 }
               </style>
 
-      <Header />
+      <Header clearUser = {this.clearUser} />
       
       
       <h1>Profile Details </h1>
@@ -53,7 +54,7 @@ class Register extends React.Component {
       <p>User: {localStorage.getItem("username")}</p>
       <p>Role: Admin</p>
 
-      <p><a href="/admin">Click to return Home</a> </p>
+      <p><Link to="/admin">Click to return Home</Link> </p>
         {/* <div className="register-form">
 
         <form onSubmit={this.state.handleRegister}>
