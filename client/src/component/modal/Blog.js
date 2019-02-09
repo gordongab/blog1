@@ -78,7 +78,7 @@ class Blogs extends React.Component {
                 this.state.blogList.map(ele => {
                   return (<div>
                     <div className="insertedTitles">{ele.title} </div>
-                    <div className="displayPic"> <span className="insertedAuthors">by {ele.author} </span></div>
+                    <div className="displayPic"> <span className="insertedAuthors">by {ele.author} on {new Date(parseInt(localStorage.getItem('time')))}</span></div>
                     <div className="insertedBlogs"> {ele.content} </div>
                    <div className="delete">
                     <button className="delete-button"
