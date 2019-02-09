@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { Link,  } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 import '../auth/Login';
 
 

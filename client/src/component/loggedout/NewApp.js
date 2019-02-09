@@ -1,7 +1,7 @@
 import React from 'react';
 import Blogs from '../../component/modal/Blog';
 import './NewApp.css';
-import { Link } from 'react-router-dom';
+import { Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 
 
