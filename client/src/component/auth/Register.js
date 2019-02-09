@@ -54,7 +54,7 @@ class Register extends React.Component {
       
       <h1>Profile Details </h1>
 
-      <p>User: {localStorage.getItem("username")}</p>
+      <p>User: ggordon</p>
       <p>Role: Admin</p>
 
       <p><Link to="/admin">Click to return Home</Link> </p>
