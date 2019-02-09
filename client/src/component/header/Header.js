@@ -10,7 +10,7 @@ function Header(props){
 return (
    <div className="header">
 
-   <style jsx>{`
+   {/* <style jsx>{`
           .register-link {
             display: none;
           }
@@ -18,7 +18,7 @@ return (
             `
           
           }
-        </style>
+        </style> */}
 
             <div className="logo">{"<>"} <span className="title">webDevs Anonymous </span>
             <span className="username">{"logged in as : " + localStorage.getItem("username") }</span>
