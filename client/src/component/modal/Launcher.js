@@ -30,7 +30,8 @@ class LaunchModal extends React.Component {
   }
 
   addDate = () => { 
-    return window.localStorage.setItem("date", date)
+    const currentTime = new Date();
+    return window.localStorage.setItem("date", +new Date)
   
     }
 
