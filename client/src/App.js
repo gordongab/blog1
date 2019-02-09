@@ -8,14 +8,6 @@ import { HashRouter } from 'react-router-dom';
 
 class App extends React.Component {
 
-  // state = {username: null}
-    
-  // componentDidMount() {
-  //   const username = localStorage.getItem("username")
-  //   this.setState({username})
-    
-
-  // }
 
   clearUser = () => {
     return localStorage.removeItem("username")
@@ -29,11 +21,6 @@ class App extends React.Component {
           .login-link {
             display: none;
           }
-
-          .register-link {
-            display: none;
-          }
-
 
             `
           

@@ -58,6 +58,11 @@ class Blogs extends React.Component {
       this.getPosts();
     }
   
+    addDate = () => { 
+      return window.localStorage.setItem("date", date)
+    
+      }
+
     render() {
       return (
         <div className="Blogs">
@@ -72,7 +77,7 @@ class Blogs extends React.Component {
                 this.state.blogList.map(ele => {
                   return (<div>
                     <div className="insertedTitles">{ele.title} </div>
-                    <div className="displayPic"> <span className="insertedAuthors">by {ele.author} </span></div>
+                    <div className="displayPic"> <span className="insertedAuthors">by {ele.author} on {localStorage.getItem("date")}</span></div>
                     <div className="insertedBlogs"> {ele.content} </div>
                    <div className="delete">
                     <button className="delete-button"
