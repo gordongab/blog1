@@ -9,6 +9,17 @@ function Header(props){
         console.log(localStorage.getItem("username"), "in header")
 return (
    <div className="header">
+
+   <style jsx>{`
+          .register-link {
+            display: none;
+          }
+
+            `
+          
+          }
+        </style>
+
             <div className="logo">{"<>"} <span className="title">webDevs Anonymous </span>
             <span className="username">{"logged in as : " + localStorage.getItem("username") }</span>
           
@@ -19,9 +30,9 @@ return (
        <li className="welcome-link">
           <Link to="/home">Home</Link>
         </li>
-        {/* <li className="register-link">
-          <Link to="/register">Signup</Link>
-        </li> */}
+        <li className="register-link">
+          <Link to="/profile">Profile</Link>
+        </li>
         <li className="login-link">
           <Link to="/login">Login</Link>
         </li>

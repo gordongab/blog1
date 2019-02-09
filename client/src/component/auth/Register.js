@@ -36,11 +36,23 @@ class Register extends React.Component {
   render() { 
     return (
       <div className="registration-form">
+          <style jsx>{`
+          .register-link {
+            display: none;
+          }
+
+            `
+                }
+              </style>
+
       <Header />
       
       
-      <h1>dev Signup! </h1>
-        <div className="register-form">
+      <h1>Profile Details </h1>
+
+      <p>User: {localStorage.getItem("username")}
+      Role: Admin</p>
+        {/* <div className="register-form">
 
         <form onSubmit={this.state.handleRegister}>
             <div className="form-group">
@@ -85,7 +97,7 @@ class Register extends React.Component {
                   >submit</button>
 
               </div>
-        </form>
+        </form> */}
     
       </div>
   </div>

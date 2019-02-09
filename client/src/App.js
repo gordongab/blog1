@@ -30,6 +30,11 @@ class App extends React.Component {
             display: none;
           }
 
+          .register-link {
+            display: none;
+          }
+
+
             `
           
           }
