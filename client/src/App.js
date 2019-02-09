@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './component/header/Header';
 import Blogs from './component/modal/Blog';
 import './App.css';
+import { HashRouter } from 'react-router-dom';
 
 
 

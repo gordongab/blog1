@@ -10,11 +10,13 @@ import NotFound from '../src/component/notfound/NotFound';
 import './index.css';
 import NewApp from '../src/component/loggedout/NewApp';
 import BlogDelete from '../src/component/admin/AdminDelete';
+import { HashRouter } from 'react-router-dom';
 
 localStorage.setItem('loggedIn', false)
 
 const Routing = () => (
-    <Router>
+   <HashRouter>
+      <Router>
        <div>
       
       <Switch>
@@ -23,11 +25,12 @@ const Routing = () => (
         <Route path="/login" component={Login} />
         <Route  path="/logout" component={NewApp} />
         <Route  path="/register" component={Register} />
-        <Route  path="/admin" component={App} />
+        <Route path="/admin" component={App} />
         <Route component={NotFound} />
         </Switch>
       </div>
     </Router>
+    </HashRouter>
   )
 
 ReactDOM.render(<Routing />, document.getElementById('root'));
