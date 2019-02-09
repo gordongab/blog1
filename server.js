@@ -12,14 +12,14 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-else {
-// Express serve up index.html file if it doesn't recognize route
-const path = require('path');
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
-});
-}
-}
+// else {
+// // Express serve up index.html file if it doesn't recognize route
+// const path = require('path');
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
+// });
+// }
+// }
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://gordongab:reactblog1@ds011705.mlab.com:11705/heroku_wcjlssfq");
