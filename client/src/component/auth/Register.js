@@ -50,8 +50,10 @@ class Register extends React.Component {
       
       <h1>Profile Details </h1>
 
-      <p>User: {localStorage.getItem("username")}
-      Role: Admin</p>
+      <p>User: {localStorage.getItem("username")}</p>
+      <p>Role: Admin</p>
+
+      <p><a href="/admin">Click to return Home</a> </p>
         {/* <div className="register-form">
 
         <form onSubmit={this.state.handleRegister}>

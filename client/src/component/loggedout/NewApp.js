@@ -36,7 +36,7 @@ class NewApp extends React.Component {
         
       </ul>
             
-      <h1> Admin {localStorage.getItem("username")} successfully logged out.</h1>
+      <h1> Admin ("{localStorage.getItem("username")}") successfully logged out.</h1>
                    </div>
         
                   )
